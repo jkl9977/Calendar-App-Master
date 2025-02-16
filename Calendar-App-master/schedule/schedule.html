@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="schedule.css">
+    <title>Schedule</title>
+</head>
+<body>
+
+<div id="schedule-form">
+	<a href="/calendar/calendar.html">
+            <span class="material-symbols-outlined">
+                arrow_back_ios_new
+            </span>
+        </a>
+    <h2>일정 추가</h2>
+    <form id="add-schedule-form">
+        <label for="title">제목:</label>
+        <input type="text" id="title" name="title" required><br>
+
+        <label for="date">날짜:</label>
+        <input type="date" id="date" name="date" required><br>
+
+        <label for="time">시간:</label>
+        <input type="time" id="time" name="time" required><br>
+
+        <label for="memo">메모:</label>
+        <textarea id="memo" name="memo" rows="4" cols="50"></textarea><br>
+
+        <button type="button" onclick="addSchedule()">일정 추가하기</button>
+    </form>
+</div>
+
+<script src="schedule1.js"></script>
+</body>
+</html>

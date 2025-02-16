@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="find_pw.css">
+    <title>비밀번호 찾기</title>
+</head>
+<body>
+    <div class="form-container">
+		<button type="button" onclick="goBack()">
+            <span class="material-symbols-outlined">
+                arrow_back_ios_new
+            </span>
+        </button>
+        <h2>비밀번호 찾기</h2>
+        <form action="find_pw.php" method="POST">
+            <label for="username">ID/Email</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="phone">전화번호</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit">비밀번호 찾기</button>
+        </form>
+    </div>
+
+    <script src="find_pw.js"></script>
+</body>
+</html>

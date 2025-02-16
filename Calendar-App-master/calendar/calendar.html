@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="calendar.css"> <!-- calendar.css 파일을 연결 -->
+  <script type="text/javascript" src="calendar1.js"></script> <!-- calendar.js 파일을 연결 -->
+
+  <title>Calendar</title>
+</head>
+<body>
+  <div class="wrapper"> <!-- 캘린더를 감싸는 컨테이너 -->
+    <header>
+      <div class="nav"> <!-- 탐색(네비게이션)을 담당하는 요소 -->
+        <button class="last-icons" style="color:purple;">&lt;</button> <!-- 이전 달로 이동하는 버튼 -->
+        <p class="current-date" style="color:purple;"></p> <!-- 현재 날짜를 표시하는 요소 -->
+        <button class="next-icons" style="color:purple;">&gt;</button> <!-- 다음 달로 이동하는 버튼 -->
+      </div>
+      <hr>
+    </header>
+
+    <div class="calendar"> <!-- 캘린더 영역을 담당하는 요소 -->
+      <ul class="weeks"> <!-- 요일을 나타내는 리스트 -->
+        <li style="color:red;">Sun</li>
+        <li>Mon</li>
+        <li>Tue</li>
+        <li>Wed</li>
+        <li>Thu</li>
+        <li>Fri</li>
+        <li style="color:blue;">Sat</li>
+      </ul>
+      <hr>
+      <ul class="days"> <!-- 날짜를 나타내는 리스트 -->
+      </ul>
+      <hr>
+    </div>
+	  <div id="events">
+            <h3><b>일정</b></h3>
+		  <div id="event-list-date">
+		  </div>
+            <div id="event-list">저장된 일정 없음</div>
+        </div>
+        <button class="event" onclick="goToAddEventPage()">
+	  		<span class="material-symbols-outlined">
+				add
+			</span>
+	  </button>
+  </div>
+</body>
+</html>

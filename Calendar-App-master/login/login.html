@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>로그인</title>
+</head>
+<body>
+    <div class="login-container">
+        <img src="/image/logo.png" alt="앱 로고" class="logo">
+        <form action="login.php" method="POST">
+         <br>
+            <label for="username">App name</label>
+         <br>
+            <input type="text" id="username" name="username" placeholder="ID/Email"  required>
+
+            
+            <input type="password" id="password" name="password" placeholder="Password" required>
+
+            <button type="submit">Login</button>
+        </form>
+        <hr>
+        <div class="options">
+            <a href="/find_id/find_id.html">아이디 찾기</a>
+            <span>/</span>
+            <a href="/find_pw/find_pw.html">비밀번호 찾기</a>
+         <span>/</span>
+         <a class="signup-link" href="/signup/signup.html">회원가입</a>
+        </div>
+        
+    </div>
+
+    <!-- <script src="login.js"></script> -->
+</body>
+</html>

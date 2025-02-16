@@ -1,0 +1,30 @@
+calendar database
+
+sudo -u root -p;
+CREATE DATABASE app default CHARACTER SET UTF8;
+GRANT ALL PRIVILEGES ON app.* TO jqk777@localhost;
+
+use app;
+
+create table Users(
+user_id int(11) not null auto_increment,
+name varchar(50) not null,
+phone varchar(50) not null,
+username varchar(50) not null,
+password varchar(225) not null,
+primary key (user_id)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+create table Add_Schedule(
+schedule_id int(11) not null auto_increment,
+username varchar(50) not null,
+title varchar(50) not null,
+date DATE NOT NULL,
+time TIME NOT NULL,
+detail TEXT,
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+primary key (schedule_id)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+select * from Users;
+select * from Add_Schedule;
